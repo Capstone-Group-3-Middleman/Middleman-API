@@ -1,5 +1,6 @@
 Feature: Register User
 
+  @Register @Positive
   Scenario: Post Register user with valid data
     Given POST Register user with JSON file "ValidRegister.json"
     When Send POST Register user
@@ -7,6 +8,7 @@ Feature: Register User
     And Response body should display register message "register success"
     And Validate register user with JSON Schema "ValidRegSchema.json"
 
+  @Register @Negative
   Scenario Outline: Post Register user with invalid data
     Given POST Register user with JSON file <jsonName>
     When Send POST Register user
@@ -24,6 +26,7 @@ Feature: Register User
       | "InvalidEmailRegister.json" | 400        | "your email or handphone number is already registered" | "InvalidEmailRegSchema.json" |
       | "InvalidPhoneRegister.json" | 400        | "your email or handphone number is already registered" | "InvalidPhoneRegSchema.json" |
 
+  @Register @Negative
   Scenario: Post Register user with invalid path
     Given POST Register user with JSON file "ValidRegister.json"
     When Send POST Register user with invalid path
