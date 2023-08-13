@@ -6,8 +6,8 @@ import io.cucumber.java.en.When;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
-import starter.Middleman.MiddlemanAPI;
 import starter.Middleman.MiddlemanResponses;
+import starter.Middleman.UsersAPI;
 import starter.Utils.Constants;
 
 import java.io.File;
@@ -17,22 +17,22 @@ import static org.hamcrest.CoreMatchers.equalTo;
 public class PutUpdateUserSteps {
 
     @Steps
-    MiddlemanAPI middlemanAPI;
+    UsersAPI usersAPI;
     @Given("PUT Update User with {string} token and {string} data")
     public void putUpdateUserWithTokenAndData(String token, String data) {
         if(token.equals("valid") && data.equals("valid")){
             File json = new File(Constants.REQ_BODY_UPDATE + "UpdateUser.json");
-            middlemanAPI.putUpdateUser(json);
+            usersAPI.putUpdateUser(json);
         } else if (token.equals("invalid") && data.equals("valid")) {
             File json = new File(Constants.REQ_BODY_UPDATE + "UpdateUser.json");
-            middlemanAPI.putUpdateUserInvalidToken(json);
+           usersAPI.putUpdateUserInvalidToken(json);
         }
     }
 
     @When("Send PUT Update User")
     public void sendPUTUpdateUser() {
         SerenityRest.when()
-                .put(MiddlemanAPI.PUT_UPDATE_USER);
+                .put(UsersAPI.PUT_UPDATE_USER);
     }
 
     @And("Response body should display update user message {string}")
@@ -52,7 +52,7 @@ public class PutUpdateUserSteps {
     @Given("PUT Update User with valid token and JSON file {string}")
     public void putUpdateUserWithValidTokenAndJSONFile(String jsonName) {
         File json = new File(Constants.REQ_BODY_UPDATE + ""+jsonName+"");
-        middlemanAPI.putUpdateUser(json);
+        usersAPI.putUpdateUser(json);
     }
 
     @And("Response body should display update user error message {string}")
