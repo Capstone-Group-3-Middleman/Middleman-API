@@ -15,6 +15,8 @@ public class Constants {
      * Authentications
      */
 
-    public static String REQ_BODY_AUTH_LOGIN = JSON + "/ReqBody/Authenticationts/Login/";
-    public static String REQ_BODY_AUTH_REGISTER = JSON + "/ReqBody/Authenticationts/Register/";
+    public static String REQ_BODY_LOGIN = JSON + "/ReqBody/Authentications/Login/";
+    public static String JSON_SCHEMA_LOGIN = JSON + "/JSONSchema/Authentications/Login/";
+    public static String REQ_BODY_REGISTER = JSON + "/ReqBody/Authentications/Register/";
+    public static String JSON_SCHEMA_REGISTER = JSON + "/JSONSchema/Authentications/Register/";
 }
