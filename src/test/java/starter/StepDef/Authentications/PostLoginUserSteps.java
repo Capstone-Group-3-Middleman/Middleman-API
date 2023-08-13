@@ -6,7 +6,7 @@ import io.cucumber.java.en.When;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
-import starter.Middleman.MiddlemanAPI;
+import starter.Middleman.AuthenticationsAPI;
 import starter.Middleman.MiddlemanResponses;
 import starter.Utils.Constants;
 
@@ -17,17 +17,18 @@ import static org.hamcrest.CoreMatchers.equalTo;
 public class PostLoginUserSteps {
 
     @Steps
-    MiddlemanAPI middlemanAPI;
+    AuthenticationsAPI authenticationsAPI;
+
     @Given("POST Login with JSON file {string}")
     public void postLoginWithJSONFile(String jsonName) {
         File json = new File(Constants.REQ_BODY_LOGIN + ""+jsonName+"");
-        middlemanAPI.postLoginUser(json);
+        authenticationsAPI.postLoginUser(json);
     }
 
     @When("Send POST Login")
     public void sendPOSTLogin() {
         SerenityRest.when()
-                .post(MiddlemanAPI.POST_LOGIN_USER);
+                .post(AuthenticationsAPI.POST_LOGIN_USER);
     }
 
     @And("Response body should display login message {string}")
