@@ -45,7 +45,7 @@ public class GetUserSteps {
     @And("Response body should display user message {string}")
     public void responseBodyShouldDisplayUserMessage(String message) {
         SerenityRest.and()
-                .body(MiddlemanResponses.LIST_USER_MESSAGE, equalTo(message));
+                .body(MiddlemanResponses.USER_MESSAGE, equalTo(message));
     }
 
     @And("Validate user with JSON Schema {string}")
@@ -59,6 +59,6 @@ public class GetUserSteps {
     @And("Response body should display user error message {string}")
     public void responseBodyShouldDisplayListUserErrorMessage(String errorMsg) {
         SerenityRest.and()
-                .body(MiddlemanResponses.LIST_USER_ERROR_MESSAGE, equalTo(errorMsg));
+                .body(MiddlemanResponses.USER_ERROR_MESSAGE, equalTo(errorMsg));
     }
 }
