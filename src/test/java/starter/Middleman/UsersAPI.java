@@ -7,8 +7,7 @@ import starter.Utils.Constants;
 
 import java.io.File;
 
-public class MiddlemanAPI {
-
+public class UsersAPI {
     /**
      * Users
      */
