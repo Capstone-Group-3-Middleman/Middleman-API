@@ -48,4 +48,16 @@ public class PutUpdateUserSteps {
                 .assertThat()
                 .body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
+
+    @Given("PUT Update User with valid token and JSON file {string}")
+    public void putUpdateUserWithValidTokenAndJSONFile(String jsonName) {
+        File json = new File(Constants.REQ_BODY_UPDATE + ""+jsonName+"");
+        middlemanAPI.putUpdateUser(json);
+    }
+
+    @And("Response body should display update user error message {string}")
+    public void responseBodyShouldDisplayUpdateUserErrorMessage(String errorMsg) {
+        SerenityRest.and()
+                .body(MiddlemanResponses.UPDATE_USER_ERROR_MESSAGE, equalTo(errorMsg));
+    }
 }

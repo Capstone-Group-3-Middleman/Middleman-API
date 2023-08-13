@@ -15,6 +15,7 @@ public class MiddlemanAPI {
 
     public static String GET_USER = Constants.BASE_URL + "/{path}";
     public static String PUT_UPDATE_USER = Constants.BASE_URL + "/users";
+    public static String DELETE_USER = Constants.BASE_URL + "/users";
 
 
     /**
@@ -49,6 +50,18 @@ public class MiddlemanAPI {
                 .header("Authorization", "Bearer " + Constants.TOKEN_INVALID)
                 .contentType(ContentType.JSON)
                 .body(json);
+    }
+
+    @Step
+    public void deleteUser() {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_USER);
+    }
+
+    @Step
+    public void deleteUserInvalidToken() {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_INVALID);
     }
 
 }
