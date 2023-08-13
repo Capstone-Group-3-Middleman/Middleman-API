@@ -30,4 +30,11 @@ public class MiddlemanAPI {
                 .contentType(ContentType.JSON)
                 .body(json);
     }
+
+    @Step("Login User")
+    public void postLoginUser(File json) {
+        SerenityRest.given()
+                .contentType(ContentType.JSON)
+                .body(json);
+    }
 }

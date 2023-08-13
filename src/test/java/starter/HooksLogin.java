@@ -12,7 +12,7 @@ import java.io.File;
 
 public class HooksLogin {
 
-    @Before
+    @Before("@TokenUser")
     public void loginUser(){
         File json = new File("src/test/resources/JSON/ReqBody/Authentications/Login/ValidLoginUser.json");
         Response response= SerenityRest.given()
@@ -23,7 +23,7 @@ public class HooksLogin {
         Constants.TOKEN_USER = jsonPath.get("data.token");
     }
 
-    @Before
+    @Before("@TokenAdmin")
     public void loginAdmin(){
         File json = new File("src/test/resources/JSON/ReqBody/Authentications/Login/ValidLoginAdmin.json");
         Response response= SerenityRest.given()
@@ -34,9 +34,12 @@ public class HooksLogin {
         Constants.TOKEN_ADMIN = jsonPath.get("data.token");
     }
 
-    @After
+    @After("@TokenUser")
     public void resetTokenUser() {
         Constants.TOKEN_USER = null;
+    }
+    @After("@TokenAdmin")
+    public void resetTokenAdmin() {
         Constants.TOKEN_ADMIN = null;
     }
 }
