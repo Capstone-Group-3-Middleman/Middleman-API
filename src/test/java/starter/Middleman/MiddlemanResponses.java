@@ -1,6 +1,8 @@
 package starter.Middleman;
 
 public class MiddlemanResponses {
+    public static String LIST_USER_PRODUCT_MESSAGE = "message";
+    public static String LIST_USER_PRODUCT_ERROR_MESSAGE = "message";
     public static String REG_SUCCESS_MESSAGE = "message";
     public static String REG_ERROR_MESSAGE = "message";
 
