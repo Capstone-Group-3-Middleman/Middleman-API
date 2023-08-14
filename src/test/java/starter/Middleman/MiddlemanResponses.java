@@ -28,4 +28,7 @@ public class MiddlemanResponses {
 
 
 
+
+    public static String CREATE_USER_PRODUCT_MESSAGE = "message";
+    public static String CREATE_USER_PRODUCT_ERROR_MESSAGE = "message";
 }

@@ -6,6 +6,7 @@ public class Constants {
     public static final  String DIR = System.getProperty("user.dir");
 
     public static String JSON = DIR+"/src/test/resources/JSON";
+    public static String IMAGES = DIR+"/src/test/resources/Images/";
 
     public static String TOKEN_USER = "";
     public static String TOKEN_ADMIN = "";
