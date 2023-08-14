@@ -13,6 +13,7 @@ public class UserProductsAPI {
     public static String GET_SEARCH_USER_PRODUCTS = Constants.BASE_URL + "/users/products/search?productname={prodName}";
     public static String POST_CREATE_USER_PRODUCTS = Constants.BASE_URL + "/users/products";
     public static String PUT_UPDATE_USER_PRODUCTS = Constants.BASE_URL + "/users/products/{idproduct}";
+    public static String DELETE_USER_PRODUCTS = Constants.BASE_URL + "/users/products/{id}";
 
     @Step("List User Product valid token")
     public void getListUserProducts(String path) {
@@ -119,5 +120,19 @@ public class UserProductsAPI {
                 .formParam("unit", fileJson.get("unit").toString())
                 .formParam("stock", fileJson.get("stock").toString())
                 .formParam("price", fileJson.get("price").toString());
+    }
+
+    @Step("Delete User Product valid token")
+    public void deleteUserProducts(String id) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_USER)
+                .pathParam("id", id);
+    }
+
+    @Step("Delete User Product invalid token")
+    public void deleteUserProductsInvalidToken(String id) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_INVALID)
+                .pathParam("id", id);
     }
 }
