@@ -12,6 +12,8 @@ public class UserProductsAPI {
     public static String GET_LIST_USER_PRODUCTS = Constants.BASE_URL + "/users/{path}";
     public static String POST_CREATE_USER_PRODUCTS = Constants.BASE_URL + "/users/products";
 
+    public static String PUT_UPDATE_USER_PRODUCTS = Constants.BASE_URL + "/users/products/{idproduct}";
+
     @Step("List User Product valid token")
     public void getListUserProducts(String path) {
         SerenityRest.given()
@@ -58,6 +60,47 @@ public class UserProductsAPI {
         SerenityRest.given()
                 .header("Authorization", "Bearer " + Constants.TOKEN_USER)
                 .formParam("product_image", fileJson.get("product_image").toString())
+                .formParam("product_name", fileJson.get("product_name").toString())
+                .formParam("unit", fileJson.get("unit").toString())
+                .formParam("stock", fileJson.get("stock").toString())
+                .formParam("price", fileJson.get("price").toString());
+    }
+
+    @Step("Update User Product valid token")
+    public void putUpdateUserProduct(String idProd, File json) {
+        JsonPath fileJson = new JsonPath(json);
+        File image = new File(Constants.IMAGES + "gambar2.jpg");
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_USER)
+                .pathParam("idproduct", idProd)
+                .multiPart("product_image", image)
+                .formParam("product_name", fileJson.get("product_name").toString())
+                .formParam("unit", fileJson.get("unit").toString())
+                .formParam("stock", fileJson.get("stock").toString())
+                .formParam("price", fileJson.get("price").toString());
+    }
+
+    @Step("Update User Product valid token")
+    public void putUpdateUserProductInvalidToken(String idProd, File json) {
+        JsonPath fileJson = new JsonPath(json);
+        File image = new File(Constants.IMAGES + "gambar2.jpg");
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_INVALID)
+                .pathParam("idproduct", idProd)
+                .multiPart("product_image", image)
+                .formParam("product_name", fileJson.get("product_name").toString())
+                .formParam("unit", fileJson.get("unit").toString())
+                .formParam("stock", fileJson.get("stock").toString())
+                .formParam("price", fileJson.get("price").toString());
+    }
+
+    @Step("Create User Product valid token")
+    public void putUpdateUserProductEmptyImage(String idProd, File json) {
+        JsonPath fileJson = new JsonPath(json);
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_USER)
+                .pathParam("idproduct", idProd)
+//                .formParam("product_image", fileJson.get("product_image").toString())
                 .formParam("product_name", fileJson.get("product_name").toString())
                 .formParam("unit", fileJson.get("unit").toString())
                 .formParam("stock", fileJson.get("stock").toString())
