@@ -23,6 +23,7 @@ public class Constants {
     public static String REQ_BODY_UPDATE = JSON + "/ReqBody/Users/UpdateUser/";
 
     public static String JSON_SCHEMA_GET_USER_PRODUCTS = JSON + "/JSONSchema/UserProducts/ListUserProduct/";
+    public static String JSON_SCHEMA_SEARCH_USER_PRODUCTS = JSON + "/JSONSchema/UserProducts/SearchUserProduct/";
     public static String JSON_SCHEMA_CREATE_USER_PRODUCTS = JSON + "/JSONSchema/UserProducts/CreateUserProduct/";
     public static String JSON_SCHEMA_UPDATE_USER_PRODUCTS = JSON + "/JSONSchema/UserProducts/UpdateUserProduct/";
     public static String JSON_SCHEMA_DELETE_USER_PRODUCTS = JSON + "/JSONSchema/UserProducts/DeleteUserProduct/";

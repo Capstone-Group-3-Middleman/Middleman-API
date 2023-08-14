@@ -10,8 +10,8 @@ import java.io.File;
 public class UserProductsAPI {
 
     public static String GET_LIST_USER_PRODUCTS = Constants.BASE_URL + "/users/{path}";
+    public static String GET_SEARCH_USER_PRODUCTS = Constants.BASE_URL + "/users/products/search?productname={prodName}";
     public static String POST_CREATE_USER_PRODUCTS = Constants.BASE_URL + "/users/products";
-
     public static String PUT_UPDATE_USER_PRODUCTS = Constants.BASE_URL + "/users/products/{idproduct}";
 
     @Step("List User Product valid token")
@@ -26,6 +26,20 @@ public class UserProductsAPI {
         SerenityRest.given()
                 .header("Authorization", "Bearer " + Constants.TOKEN_INVALID)
                 .pathParam("path", path);
+    }
+
+    @Step("Search User Product valid token")
+    public void getSearchUserProducts(String prodName) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_USER)
+                .pathParam("prodName", prodName);
+    }
+
+    @Step("Search User Product invalid token")
+    public void getSearchUserProductsInvalidToken(String prodName) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_INVALID)
+                .pathParam("prodName", prodName);
     }
 
     @Step("Create User Product valid token")
@@ -100,7 +114,7 @@ public class UserProductsAPI {
         SerenityRest.given()
                 .header("Authorization", "Bearer " + Constants.TOKEN_USER)
                 .pathParam("idproduct", idProd)
-//                .formParam("product_image", fileJson.get("product_image").toString())
+                .formParam("product_image", fileJson.get("product_image").toString())
                 .formParam("product_name", fileJson.get("product_name").toString())
                 .formParam("unit", fileJson.get("unit").toString())
                 .formParam("stock", fileJson.get("stock").toString())
