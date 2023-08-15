@@ -41,4 +41,5 @@ public class MiddlemanResponses {
     public static String DELETE_USER_PRODUCT_ERROR_MESSAGE = "message";
 
     public static String LIST_CART_ERROR_MESSAGE = "message";
+    public static String DELETE_CART_ERROR_MESSAGE = "message";
 }
