@@ -13,10 +13,7 @@ public class AuthenticationsAPI {
      */
     public static String POST_REGISTER_USER = Constants.BASE_URL + "/register";
     public static String POST_REGISTER_USER_INVALID_PATH = Constants.BASE_URL + "/xyz";
-
     public static String POST_LOGIN_USER = Constants.BASE_URL + "/login";
-//    public static String POST_LOGIN_ADMIN = Constants.BASE_URL + "/login";
-
 
     /**
      *
