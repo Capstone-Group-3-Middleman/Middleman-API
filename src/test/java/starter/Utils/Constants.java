@@ -18,7 +18,6 @@ public class Constants {
     public static String JSON_SCHEMA_USER = JSON + "/JSONSchema/Users/GetUser/";
     public static String JSON_SCHEMA_UPDATE_USER = JSON + "/JSONSchema/Users/UpdateUser/";
     public static String JSON_SCHEMA_DELETE = JSON + "/JSONSchema/Users/DeleteUser/";
-
     public static String REQ_BODY_UPDATE = JSON + "/ReqBody/Users/UpdateUser/";
 
 
