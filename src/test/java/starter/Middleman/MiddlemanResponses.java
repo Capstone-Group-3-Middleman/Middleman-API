@@ -1,6 +1,8 @@
 package starter.Middleman;
 
 public class MiddlemanResponses {
+    public static String LIST_USER_PRODUCT_MESSAGE = "message";
+    public static String LIST_USER_PRODUCT_ERROR_MESSAGE = "message";
     public static String REG_SUCCESS_MESSAGE = "message";
     public static String REG_ERROR_MESSAGE = "message";
 
@@ -26,4 +28,15 @@ public class MiddlemanResponses {
 
 
 
+
+    public static String SEARCH_USER_PRODUCT_NAME = "data[0].product_name";
+    public static String SEARCH_USER_PRODUCT_ERROR_MESSAGE = "message";
+
+    public static String CREATE_USER_PRODUCT_MESSAGE = "message";
+    public static String CREATE_USER_PRODUCT_ERROR_MESSAGE = "message";
+
+    public static String UPDATE_USER_PRODUCT_MESSAGE = "message";
+    public static String UPDATE_USER_PRODUCT_ERROR_MESSAGE = "message";
+
+    public static String DELETE_USER_PRODUCT_ERROR_MESSAGE = "message";
 }
