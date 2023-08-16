@@ -30,7 +30,6 @@ public class Constants {
     public static String JSON_SCHEMA_LOGIN = JSON + "/JSONSchema/Authentications/Login/";
     public static String REQ_BODY_REGISTER = JSON + "/ReqBody/Authentications/Register/";
     public static String JSON_SCHEMA_REGISTER = JSON + "/JSONSchema/Authentications/Register/";
-}
 
     /**
      * Inoutbounds
