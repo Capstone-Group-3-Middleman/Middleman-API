@@ -18,7 +18,6 @@ public class Constants {
     public static String JSON_SCHEMA_USER = JSON + "/JSONSchema/Users/GetUser/";
     public static String JSON_SCHEMA_UPDATE_USER = JSON + "/JSONSchema/Users/UpdateUser/";
     public static String JSON_SCHEMA_DELETE = JSON + "/JSONSchema/Users/DeleteUser/";
-    public static String REQ_BODY_UPDATE = JSON + "/ReqBody/Users/UpdateUser/";
 
     public static String REQ_BODY_UPDATE = JSON + "/ReqBody/Users/UpdateUser/";
 
@@ -27,9 +26,20 @@ public class Constants {
     /**
      * Authentications
      */
-
     public static String REQ_BODY_LOGIN = JSON + "/ReqBody/Authentications/Login/";
     public static String JSON_SCHEMA_LOGIN = JSON + "/JSONSchema/Authentications/Login/";
     public static String REQ_BODY_REGISTER = JSON + "/ReqBody/Authentications/Register/";
     public static String JSON_SCHEMA_REGISTER = JSON + "/JSONSchema/Authentications/Register/";
+}
+
+    /**
+     * Inoutbounds
+     */
+    public static String REQ_BODY_INOUTBOUNDS_POST = JSON + "/ReqBody/Inoutbounds/PostInoutbounds/";
+    public static String REQ_BODY_INOUTBOUNDS_GET = JSON + "/ReqBody/Inoutbounds/GetInoutbounds/";
+    public static String REQ_BODY_INOUTBOUNDS = JSON + "/ReqBody/Inoutbounds/";
+
+    public static String JSON_SCHEMA_INOUTBOUNDS = JSON + "/JSONSchema/Inoutbounds/";
+    public static String JSON_SCHEMA_INOUTBOUNDS_GET = JSON + "/JSONSchema/Inoutbounds/GetInoutbounds/";
+    public static String JSON_SCHEMA_INOUTBOUNDS_PUT = JSON + "/JSONSchema/Inoutbounds/PutInoutbounds/";
 }
