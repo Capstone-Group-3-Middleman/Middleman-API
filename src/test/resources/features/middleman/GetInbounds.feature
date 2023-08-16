@@ -8,7 +8,7 @@ Feature: to get cart for stock user (out) and admin (in)
     And Response body should display inoutbounds error message "missing or malformed jwt"
     And Validate get response inoutbounds with JSON Schema "JSONschemaGetError.json"
 
-  @Inoutbounds @Negative @TokenUser
+  @Inoutbounds @Negative @TokenInvalid
   Scenario: Get cart with expired token [PPA-02]
     Given Login inoutbounds with "invalid" token
     When Send get request inoutbounds

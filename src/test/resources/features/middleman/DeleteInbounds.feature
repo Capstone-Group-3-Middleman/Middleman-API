@@ -9,7 +9,7 @@ Feature: Delete product by id in carts for stock user (out) and admin (in)
     And Response body should display inoutbounds error message "missing or malformed jwt"
     And Validate response inoutbounds with JSON Schema "JSONschemaDeleteError.json"
 
-  @Inoutbounds @Negative @TokenUser
+  @Inoutbounds @Negative @TokenInvalid
   Scenario: User delete inoutbounds with invalid token [DL-02]
     Given Login inoutbounds with "invalid" token
     When Delete invalid product id "2" Inoutbounds

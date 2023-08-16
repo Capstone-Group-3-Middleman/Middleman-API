@@ -1,7 +1,7 @@
 Feature: to update quantity product in carts for stock user (out) and admin (in)
 
 #  USER
-  @Inoutbounds @Negative @TokenUser
+  @Inoutbounds @Negative
   Scenario: Update qty product cart without auth token [PUT-01]
     Given Login inoutbounds with "without" token
     When Put product id "5" inoutbounds
@@ -10,7 +10,7 @@ Feature: to update quantity product in carts for stock user (out) and admin (in)
     And Response body should display inoutbounds error message "missing or malformed jwt"
     And Validate response inoutbounds with JSON Schema "JSONschemaPutError.json"
 
-  @Inoutbounds @Negative @TokenUser
+  @Inoutbounds @Negative @TokenInvalid
   Scenario: Update qty product cart with expired auth token [PUT-02]
     Given Login inoutbounds with "invalid" token
     When Update valid product id "5" inoutbounds
