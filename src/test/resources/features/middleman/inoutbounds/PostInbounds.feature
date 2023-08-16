@@ -9,7 +9,7 @@ Feature: Post product added to cart on endpoint inoutbounds
     And Response body should display inoutbounds error message "missing or malformed jwt"
     And Validate response inoutbounds with JSON Schema "JSONschemaPostError.json"
 
-  @Inoutbounds @Negative @TokenInvalid
+  @Inoutbounds @Negative @TokenUser
   Scenario: User create cart with auth token and without request body [PPA-02]
     Given Login inoutbounds with "user" token
     When Send post request inoutbounds
