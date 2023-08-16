@@ -1,10 +1,6 @@
 package starter.Middleman;
 
 public class MiddlemanResponses {
-
-    /**
-     * Authentications Message
-     */
     public static String REG_SUCCESS_MESSAGE = "message";
     public static String REG_ERROR_MESSAGE = "message";
 
@@ -20,4 +16,16 @@ public class MiddlemanResponses {
 
     public static String DELETE_USER_MESSAGE = "message";
     public static String DELETE_USER_ERROR_MESSAGE = "message";
+
+    public static String INOUBOUNDS_GET_MESSAGE = "message";
+    public static String INOUBOUNDS_GET_ERROR_MESSAGE = "message";
+    public static String INOUBOUNDS_SUCCESS_MESSAGE = "message";
+    public static String INOUBOUNDS_ERROR_MESSAGE = "message";
+    public static String INOUBOUNDS_UPDATE_MESSAGE = "message";
+    public static String INOUBOUNDS_ERROR_UPDATE_MESSAGE = "message";
+    public static String INOUBOUNDS_DELETE_MESSAGE = "message";
+    public static String INOUBOUNDS_ERROR_DELETE_MESSAGE = "message";
+
+
+
 }
