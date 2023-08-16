@@ -3,12 +3,8 @@ package starter.StepDef;
 import io.cucumber.java.en.Then;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
-import starter.Middleman.MiddlemanAPI;
 
 public class MiddlemanStatusCodeResponses {
-
-    @Steps
-    MiddlemanAPI middlemanAPI;
 
     @Then("Status code should be {int} OK")
     public void statusCodeShouldBeOK(int statusCode) {
