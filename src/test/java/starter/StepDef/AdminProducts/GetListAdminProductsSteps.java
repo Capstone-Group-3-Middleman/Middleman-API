@@ -31,13 +31,13 @@ public class GetListAdminProductsSteps {
                 .get(AdminProductsAPI.LIST_ADMIN_PRODUCTS);
     }
 
-    @And("Response body should display admin product message {string}")
+    @And("Response body should display list admin product message {string}")
     public void responseBodyShouldDisplayAdminProductMessage(String message) {
         SerenityRest.and()
                 .body(MiddlemanResponses.LIST_ADMIN_PRODUCTS_MESSAGE, equalTo(message));
     }
 
-    @And("Validate admin product with JSON Schema {string}")
+    @And("Validate list admin product with JSON Schema {string}")
     public void validateAdminProductWithJSONSchema(String jsonSchName) {
         File jsonSchema = new File(Constants.JSON_SCHEMA_LIST_ADMIN_PRODUCTS + ""+jsonSchName+"");
         SerenityRest.and()
