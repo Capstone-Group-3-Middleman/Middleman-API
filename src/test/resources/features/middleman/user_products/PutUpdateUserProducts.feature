@@ -2,7 +2,7 @@ Feature: Update User Products
 
   @UpdateUserProduct @Positive @TokenUser
   Scenario: Put Update User Product with valid token and valid parameter id product
-    Given PUT Update User Product with valid token and valid id "7"
+    Given PUT Update User Product with valid token and valid id "23"
     When Send PUT Update User Product
     Then Status code should be 200 OK
     And Response body should display update user product success message "success update data"
@@ -10,7 +10,7 @@ Feature: Update User Products
 
   @UpdateUserProduct @Negative
   Scenario: Put Update User Product with invalid token and valid parameter id product
-    Given PUT Update User Product with invalid token and valid id "7"
+    Given PUT Update User Product with invalid token and valid id "23"
     When Send PUT Update User Product
     Then Status code should be 401 Unauthorized
     And Response body should display update user product error message "invalid or expired jwt"

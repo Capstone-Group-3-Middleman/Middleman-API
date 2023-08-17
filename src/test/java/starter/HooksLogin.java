@@ -42,8 +42,4 @@ public class HooksLogin {
     public void resetTokenAdmin() {
         Constants.TOKEN_ADMIN = null;
     }
-    @After("@TokenAdmin")
-    public void resetTokenAdmin() {
-        Constants.TOKEN_ADMIN = null;
-    }
 }

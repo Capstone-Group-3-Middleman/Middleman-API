@@ -66,14 +66,14 @@ public class PutUpdateUserProductsSteps {
     @Given("PUT Update User Product with valid token and JSON file {string}")
     public void putUpdateUserProductWithValidTokenAndJSONFile(String jsonName) {
         File json = new File(Constants.REQ_BODY_UPDATE_USER_PRODUCTS + ""+jsonName+"");
-        String id = "7";
+        String id = "23";
         userProductsAPI.putUpdateUserProduct(id, json);
     }
 
     @Given("PUT Update User Product with valid token and JSON {string}")
     public void putUpdateUserProductWithValidTokenAndJSON(String jsonName) {
         File json = new File(Constants.REQ_BODY_UPDATE_USER_PRODUCTS + ""+jsonName+"");
-        String id = "7";
+        String id = "23";
         userProductsAPI.putUpdateUserProductEmptyImage(id, json);
     }
 }

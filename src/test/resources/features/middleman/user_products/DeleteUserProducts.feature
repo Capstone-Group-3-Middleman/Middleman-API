@@ -2,7 +2,7 @@ Feature: Delete User Products
 
   @DeleteUserProducts @Positive @TokenUser
   Scenario: Delete User Product with valid token and valid parameter id product
-    Given DELETE User Product with "valid" token and "valid" id "20"
+    Given DELETE User Product with "valid" token and "valid" id "24"
     When Send DELETE User Product
     Then Status code should be 204 No Content
 
@@ -24,7 +24,7 @@ Feature: Delete User Products
 
   @DeleteUserProducts @Negative
   Scenario: Delete User Product with invalid token and valid parameter id product
-    Given DELETE User Product with "invalid" token and "valid" id "22"
+    Given DELETE User Product with "invalid" token and "valid" id "24"
     When Send DELETE User Product
     Then Status code should be 401 Unauthorized
     And Response body should display delete user product error message "invalid or expired jwt"
