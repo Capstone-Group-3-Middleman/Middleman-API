@@ -61,4 +61,10 @@ public class Constants {
     public static String REQ_BODY_CREATE_ADMIN_PRODUCTS = JSON + "/ReqBody/AdminProducts/CreateProducts/";
     public static String REQ_BODY_UPDATE_ADMIN_PRODUCTS = JSON + "/ReqBody/AdminProducts/UpdateProducts/";
 
+    /**
+     * Inventories
+     */
+    public static String REQ_BODY_INVENTORY = JSON + "/ReqBody/Inventory/";
+    public static String JSON_SCHEMA_INVENTORY = JSON + "/JSONSchema/Inventory/";
+
 }
