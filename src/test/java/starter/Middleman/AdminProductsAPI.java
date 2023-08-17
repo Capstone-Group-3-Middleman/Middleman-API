@@ -16,6 +16,8 @@ public class AdminProductsAPI {
 
     public static String SEARCH_ADMIN_PRODUCTS = Constants.BASE_URL + "/admins/products/search?productname={prodName}";
 
+    public static String UPDATE_ADMIN_PRODUCTS = Constants.BASE_URL + "/admins/products/{idProd}";
+
     @Step("List Admin Products")
     public void getListAdminProduct(String path) {
         SerenityRest.given()
@@ -39,6 +41,20 @@ public class AdminProductsAPI {
     public void getSearchAdminProduct(String prodName) {
         SerenityRest.given()
                 .pathParam("prodName", prodName);
+    }
+
+    @Step("Update User Product valid token")
+    public void putUpdateAdminProduct(String idProd, File json) {
+        JsonPath fileJson = new JsonPath(json);
+        File image = new File(Constants.IMAGES + "gambar1.jpg");
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_ADMIN)
+                .pathParam("idProd", idProd)
+                .multiPart("product_image", image)
+                .formParam("product_name", fileJson.get("product_name").toString())
+                .formParam("unit", fileJson.get("unit").toString())
+                .formParam("stock", fileJson.get("stock").toString())
+                .formParam("price", fileJson.get("price").toString());
     }
 
 }

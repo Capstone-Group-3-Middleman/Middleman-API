@@ -45,6 +45,6 @@ public class MiddlemanResponses {
 
     public static String LIST_ADMIN_PRODUCTS_MESSAGE = "message";
     public static String CREATE_ADMIN_PRODUCTS_MESSAGE = "message";
-
     public static String SEARCH_ADMIN_PRODUCTS_NAME = "data[0].product_name";
+    public static String UPDATE_ADMIN_PRODUCTS_MESSAGE = "message";
 }
