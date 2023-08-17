@@ -14,13 +14,15 @@ public class AdminProductsAPI {
 
     public static String CREATE_ADMIN_PRODUCTS = Constants.BASE_URL + "/admins/products";
 
+    public static String SEARCH_ADMIN_PRODUCTS = Constants.BASE_URL + "/admins/products/search?productname={prodName}";
+
     @Step("List Admin Products")
     public void getListAdminProduct(String path) {
         SerenityRest.given()
                 .pathParam("path", path);
     }
 
-    @Step
+    @Step("Create new admin product")
     public void postCreateAdminProduct(File json) {
         JsonPath fileJson = new JsonPath(json);
         File image = new File(Constants.IMAGES + "gambar1.jpg");
@@ -31,6 +33,12 @@ public class AdminProductsAPI {
                 .formParam("unit", fileJson.get("unit").toString())
                 .formParam("stock", fileJson.get("stock").toString())
                 .formParam("price", fileJson.get("price").toString());
+    }
+
+    @Step("Search Admin Products")
+    public void getSearchAdminProduct(String prodName) {
+        SerenityRest.given()
+                .pathParam("prodName", prodName);
     }
 
 }
