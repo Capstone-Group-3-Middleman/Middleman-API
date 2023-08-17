@@ -1,7 +1,5 @@
 package starter.Middleman;
 
-
-import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
@@ -17,6 +15,8 @@ public class AdminProductsAPI {
     public static String SEARCH_ADMIN_PRODUCTS = Constants.BASE_URL + "/admins/products/search?productname={prodName}";
 
     public static String UPDATE_ADMIN_PRODUCTS = Constants.BASE_URL + "/admins/products/{idProd}";
+
+    public static String DELETE_ADMIN_PRODUCTS = Constants.BASE_URL + "/admins/products/{prodID}";
 
     @Step("List Admin Products")
     public void getListAdminProduct(String path) {
@@ -55,6 +55,13 @@ public class AdminProductsAPI {
                 .formParam("unit", fileJson.get("unit").toString())
                 .formParam("stock", fileJson.get("stock").toString())
                 .formParam("price", fileJson.get("price").toString());
+    }
+
+    @Step("Delete Admin Products")
+    public void deleteAdminProduct(String prodID) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_ADMIN)
+                .pathParam("prodID", prodID);
     }
 
 }
