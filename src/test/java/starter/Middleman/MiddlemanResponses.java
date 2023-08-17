@@ -17,17 +17,13 @@ public class MiddlemanResponses {
     public static String DELETE_USER_MESSAGE = "message";
     public static String DELETE_USER_ERROR_MESSAGE = "message";
 
-    public static String INOUBOUNDS_GET_MESSAGE = "message";
-    public static String INOUBOUNDS_GET_ERROR_MESSAGE = "message";
     public static String INOUBOUNDS_SUCCESS_MESSAGE = "message";
     public static String INOUBOUNDS_ERROR_MESSAGE = "message";
-    public static String INOUBOUNDS_UPDATE_MESSAGE = "message";
-    public static String INOUBOUNDS_ERROR_UPDATE_MESSAGE = "message";
-    public static String INOUBOUNDS_DELETE_MESSAGE = "message";
-    public static String INOUBOUNDS_ERROR_DELETE_MESSAGE = "message";
 
-
-
+    public static String LIST_CART_ERROR_MESSAGE = "message";
+    public static String DELETE_CART_ERROR_MESSAGE = "message";
+    public static String POST_CART_MESSAGE = "message";
+    public static String PUT_CART_MESSAGE = "message";
 
     public static String SEARCH_USER_PRODUCT_NAME = "data[0].product_name";
     public static String SEARCH_USER_PRODUCT_ERROR_MESSAGE = "message";
@@ -35,13 +31,11 @@ public class MiddlemanResponses {
     public static String CREATE_USER_PRODUCT_MESSAGE = "message";
     public static String CREATE_USER_PRODUCT_ERROR_MESSAGE = "message";
 
+
     public static String UPDATE_USER_PRODUCT_MESSAGE = "message";
     public static String UPDATE_USER_PRODUCT_ERROR_MESSAGE = "message";
 
     public static String DELETE_USER_PRODUCT_ERROR_MESSAGE = "message";
-
-    public static String LIST_CART_ERROR_MESSAGE = "message";
-    public static String DELETE_CART_ERROR_MESSAGE = "message";
 
     public static String LIST_ADMIN_PRODUCTS_MESSAGE = "message";
     public static String CREATE_ADMIN_PRODUCTS_MESSAGE = "message";
@@ -49,4 +43,5 @@ public class MiddlemanResponses {
     public static String UPDATE_ADMIN_PRODUCTS_MESSAGE = "message";
     public static String INVENTORY_SUCCESS_MESSAGE = "message";
     public static String INVENTORY_ERROR_MESSAGE = "message";
+
 }
