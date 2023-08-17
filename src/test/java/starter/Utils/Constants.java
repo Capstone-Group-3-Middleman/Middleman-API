@@ -52,4 +52,13 @@ public class Constants {
     public static String JSON_SCHEMA_INOUTBOUNDS = JSON + "/JSONSchema/Inoutbounds/";
     public static String JSON_SCHEMA_INOUTBOUNDS_GET = JSON + "/JSONSchema/Inoutbounds/GetInoutbounds/";
     public static String JSON_SCHEMA_INOUTBOUNDS_PUT = JSON + "/JSONSchema/Inoutbounds/PutInoutbounds/";
+    public static String JSON_SCHEMA_LIST_ADMIN_PRODUCTS = JSON + "/JSONSchema/AdminProducts/ListProducts/";
+    public static String JSON_SCHEMA_CREATE_ADMIN_PRODUCTS = JSON + "/JSONSchema/AdminProducts/CreateProducts/";
+    public static String JSON_SCHEMA_SEARCH_ADMIN_PRODUCTS = JSON + "/JSONSchema/AdminProducts/SearchProducts/";
+    public static String JSON_SCHEMA_UPDATE_ADMIN_PRODUCTS = JSON + "/JSONSchema/AdminProducts/UpdateProducts/";
+    public static String JSON_SCHEMA_DELETE_ADMIN_PRODUCTS = JSON + "/JSONSchema/AdminProducts/DeleteProducts/";
+
+    public static String REQ_BODY_CREATE_ADMIN_PRODUCTS = JSON + "/ReqBody/AdminProducts/CreateProducts/";
+    public static String REQ_BODY_UPDATE_ADMIN_PRODUCTS = JSON + "/ReqBody/AdminProducts/UpdateProducts/";
+
 }
