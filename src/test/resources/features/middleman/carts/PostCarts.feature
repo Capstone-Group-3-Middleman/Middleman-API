@@ -1,7 +1,7 @@
-Feature: Post Carts
+Feature: Create product to carts
 
   @Cart @Negative
-  Scenario: Post cart without toke [CNC-01]
+  Scenario: [CNC-01] User create new poduct to cart without token
     Given Post Cart with "without" token
     When Send post List Cart
     Then Status code should be 400 Bad Request
@@ -9,7 +9,7 @@ Feature: Post Carts
     And Validate list cart with JSON Schema "InvalidPathListCartSchema.json"
 
   @Cart @Negative @TokenUser
-  Scenario: Post cart invalid toke [CNC-02]
+  Scenario: [CNC-02] User create new poduct to cart with invalid token
     Given Post Cart with "invalid" token
     When Send post List Cart
     Then Status code should be 401 Unauthorized
@@ -17,7 +17,7 @@ Feature: Post Carts
     And Validate list cart with JSON Schema "InvalidPathListCartSchema.json"
 
   @Cart @Positive @TokenUser
-  Scenario: Post cart valid token [CNC-03]
+  Scenario: [CNC-03] User create new product to cart with valid id
     Given Post Cart with "valid" token
     When User post cart with JSON file "ReqPost.json"
     And Send post List Cart
@@ -26,7 +26,7 @@ Feature: Post Carts
     And Validate cart with JSON Schema "JSONschemaPostSuccess.json"
 
   @Cart @Negative @TokenUser
-  Scenario: Post cart valid token [CNC-04]
+  Scenario: [CNC-04] User create new products to cart with unavailable product id
     Given Post Cart with "valid" token
     When User post cart with JSON file "ReqPostUnavailableId.json"
     And Send post List Cart
@@ -35,7 +35,7 @@ Feature: Post Carts
     And Validate cart with JSON Schema "JSONschemaPostError.json"
 
   @Cart @Negative @TokenUser
-  Scenario: Post cart valid token [CNC-05]
+  Scenario: [CNC-05] User create new product to cart with valid product id and qty exceeds stock product
     Given Post Cart with "valid" token
     When User post cart with JSON file "ReqPostExceedsQTY.json"
     And Send post List Cart
@@ -44,7 +44,7 @@ Feature: Post Carts
     And Validate cart with JSON Schema "JSONschemaPostError.json"
 
   @Cart @Positive @TokenAdmin
-  Scenario: Admin Post cart valid token [CNC-06]
+  Scenario: [CNC-06] Admin create new product to cart with valid product id and multiple qty
     Given Post Cart with "admin" token
     When Admin post cart with JSON file "ReqPost.json"
     And Send post List Cart
@@ -53,7 +53,7 @@ Feature: Post Carts
     And Validate cart with JSON Schema "JSONschemaPostSuccess.json"
 
   @Cart @Positive @TokenAdmin
-  Scenario: Admin Post cart valid token [CNC-07]
+  Scenario: [CNC-07] Admin create new product to cart with empty qty
     Given Post Cart with "admin" token
     When Admin post cart with JSON file "ReqPostEmptyQTY.json"
     And Send post List Cart
@@ -62,7 +62,7 @@ Feature: Post Carts
     And Validate cart with JSON Schema "JSONschemaEmpty.json"
 
   @Cart @Positive @TokenAdmin
-  Scenario: Admin Post cart valid token [CNC-08]
+  Scenario: [CNC-08] Admin create new product to cart without qty key value
     Given Post Cart with "admin" token
     When Admin post cart with JSON file "ReqBodyWithoutQTY.json"
     And Send post List Cart
@@ -71,7 +71,7 @@ Feature: Post Carts
     And Validate cart with JSON Schema "JSONschemaEmpty.json"
 
   @Cart @Positive @TokenAdmin
-  Scenario: Admin Post cart valid token [CNC-09]
+  Scenario: [CNC-09] Create new product to cart with invalid path
     Given Post Cart with "admin" token and "invalid" path
     When Admin post cart with JSON file "ReqBodyWithoutQTY.json"
     And Send post List Carts
