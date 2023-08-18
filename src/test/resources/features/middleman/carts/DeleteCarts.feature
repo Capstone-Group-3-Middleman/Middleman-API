@@ -1,12 +1,12 @@
 Feature: Delete Carts
 
-  @DeleteCarts @Positive @TokenUser
+  @Cart @Positive @TokenUser
   Scenario: Delete Cart with valid token and valid parameter id product
     Given DELETE Cart with "valid" token and "valid" id product
     When Send DELETE Cart
     Then Status code should be 204 No Content
 
-  @DeleteCarts @Negative @TokenUser
+  @Cart @Negative @TokenUser
   Scenario: Delete Cart with valid token and invalid parameter id product
     Given DELETE Cart with "valid" token and "invalid" id product
     When Send DELETE Cart
@@ -14,7 +14,7 @@ Feature: Delete Carts
     And Response body should display delete cart error message "product data not found"
     And Validate delete cart with JSON Schema "InvalidIDDeleteCartSchema.json"
 
-  @DeleteCarts @Negative
+  @Cart @Negative
   Scenario: Delete Cart with invalid token and valid parameter id product
     Given DELETE Cart with "invalid" token and "valid" id product
     When Send DELETE Cart
@@ -22,7 +22,7 @@ Feature: Delete Carts
     And Response body should display delete cart error message "invalid or expired jwt"
     And Validate delete cart with JSON Schema "InvalidTokenDeleteCartSchema.json"
 
-  @DeleteCarts @Negative
+  @Cart @Negative
   Scenario: Delete Cart with invalid token and invalid parameter id product
     Given DELETE Cart with "invalid" token and "invalid" id product
     When Send DELETE Cart

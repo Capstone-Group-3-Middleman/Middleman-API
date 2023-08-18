@@ -18,6 +18,7 @@ public class DeleteCartsSteps {
 
     @Steps
     CartsAPI cartsAPI;
+
     @Given("DELETE Cart with {string} token and {string} id product")
     public void deleteCartWithTokenAndIdProduct(String token, String id) {
         if (token.equals("valid") && id.equals("valid")) {
