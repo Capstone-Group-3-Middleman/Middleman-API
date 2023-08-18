@@ -38,19 +38,6 @@ public class PutCartsSteps {
         SerenityRest.when()
                 .put(CartsAPI.POST_CARTS_INVALID);
     }
-//
-//    @When("Send put cart with token {string} and path {string}")
-//    public void sendPutCartWithPath(String token, String path) {
-////        if (id.equals("invalid")) {
-////            SerenityRest.when()
-////                    .put(CartsAPI.POST_CARTS_PATH);
-////            String param = "@";
-////            cartsAPI.putInvalidPath(param);
-//        if (token.equals("valid") && path.equals("invalid")) {
-//            String param = "cart/@";
-//            cartsAPI.putInvalidPath(param);
-//        }
-//    }
 
     @Given("Put Cart with {string} token and path {string}")
     public void putCartWithTokenAndPath(String id, String jsonName) {
