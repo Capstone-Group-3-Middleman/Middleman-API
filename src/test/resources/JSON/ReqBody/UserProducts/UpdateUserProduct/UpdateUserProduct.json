@@ -2,6 +2,6 @@
   "price": 20000,
   "product_image": "--",
   "product_name": "Guitar",
-  "stock": 5,
+  "stock": 100,
   "unit": "pcs"
 }
