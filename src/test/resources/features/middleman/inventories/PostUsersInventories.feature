@@ -41,7 +41,7 @@ Feature: Users inventory
     And Send post request inventory
     Then Status code should be 201 Created
     And Response body should display inventory success message "success input data"
-    And Validate response inventory with JSON Schema "JSONschemaPostSuccess.json"
+    And Validate response inventory with JSON Schema "JSONSchemaSucces.json"
 
   @Inventories @Negative @TokenUser
   Scenario: [PST-06] User create a form to list product (OUT) without unit
