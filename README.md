@@ -54,7 +54,6 @@
 **Test Case Management:**  
 
 ![Google Sheets_WEB](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)]
-[![Google Sheets_API](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)]
 [![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)]
 
 **Communication:**  
@@ -78,7 +77,7 @@
 ## 📱 Our teams
 
   [![LinkedIn](https://img.shields.io/badge/-MHumam%20Zaki-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/muhammad-humam-zaky-139369170/)
-  [![GitHub](https://img.shields.io/badge/-MhumamZaki-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/muhamaz))
+  [![GitHub](https://img.shields.io/badge/-MhumamZaki-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/muhamaz)
 
   [![LinkedIn](https://img.shields.io/badge/-Aditya%20Dwi%20Irawan-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/aditya-dwi-irawan/)
   [![GitHub](https://img.shields.io/badge/-AdityaDwiIrawan-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/Adityadi195)
