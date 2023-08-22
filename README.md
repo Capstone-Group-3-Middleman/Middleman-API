@@ -53,8 +53,8 @@
 
 **Test Case Management:**  
 
-![Google Sheets_WEB](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)]
-[![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)]
+![Google Sheets_WEB](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)
+![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)
 
 **Communication:**  
 
