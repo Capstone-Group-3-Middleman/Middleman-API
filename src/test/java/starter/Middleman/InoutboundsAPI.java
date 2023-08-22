@@ -7,6 +7,7 @@ import starter.Utils.Constants;
 
 import java.io.File;
 
+import static starter.Utils.Constants.*;
 
 public class InoutboundsAPI {
 
@@ -38,7 +39,7 @@ public class InoutboundsAPI {
     @Step("Admin valid token")
     public void getAdminInoutbounds() {
         SerenityRest.given()
-                .header("Authorization", "Bearer " + Constants.TOKEN_ADMIN);
+                .header("Authorization", "Bearer " + TOKEN_ADMIN);
     }
 
     /**
@@ -47,7 +48,7 @@ public class InoutboundsAPI {
     @Step("Create new inoutbounds")
     public void postCreateInounboundsUser(File json) {
         SerenityRest.given()
-                .header("Authorization", "Bearer " + Constants.TOKEN_USER)
+                .header("Authorization", "Bearer " + TOKEN_USER)
                 .contentType(ContentType.JSON)
                 .body(json);
     }
@@ -55,7 +56,7 @@ public class InoutboundsAPI {
     @Step("Create new inoutbounds admin")
     public void postCreateInounboundsAdmin(File json) {
         SerenityRest.given()
-                .header("Authorization", "Bearer " + Constants.TOKEN_ADMIN)
+                .header("Authorization", "Bearer " + TOKEN_ADMIN)
                 .contentType(ContentType.JSON)
                 .body(json);
     }
@@ -67,7 +68,7 @@ public class InoutboundsAPI {
     @Step("Get admin carts on inoutbounds with path")
     public void getCartInoutboundsAdminWithPath(String path) {
         SerenityRest.given()
-                .headers("Authorization", "Bearer " + Constants.TOKEN_ADMIN)
+                .headers("Authorization", "Bearer " + TOKEN_ADMIN)
                 .pathParam("path",path);
     }
 
@@ -84,14 +85,14 @@ public class InoutboundsAPI {
     @Step("User put with invalid token")
     public void putInoutboundsInvalidToken(String path) {
         SerenityRest.given()
-                .headers("Authorization", "Bearer " + Constants.TOKEN_INVALID)
+                .headers("Authorization", "Bearer " + TOKEN_INVALID)
                 .pathParam("path",path);
     }
 
     @Step("Update qty product inoutbounds")
     public void updateQtyInoutboundsQTY(File json, String path){
         SerenityRest.given()
-                .headers("Authorization", "Bearer " + Constants.TOKEN_USER)
+                .headers("Authorization", "Bearer " + TOKEN_USER)
                 .pathParam("path", path)
                 .contentType(ContentType.JSON)
                 .body(json);
@@ -100,7 +101,7 @@ public class InoutboundsAPI {
     @Step("Admin update qty product inoutbounds")
     public void adminUpdateQtyInoutboundsQTY(File json, String path){
         SerenityRest.given()
-                .headers("Authorization", "Bearer " + Constants.TOKEN_ADMIN)
+                .headers("Authorization", "Bearer " + TOKEN_ADMIN)
                 .pathParam("path", path)
                 .contentType(ContentType.JSON)
                 .body(json);
@@ -119,21 +120,21 @@ public class InoutboundsAPI {
     @Step("Delete product inoutbounds token invalid")
     public void deleteProductInoutboundsInvalid(String path) {
         SerenityRest.given()
-                .headers("Authorization", "Bearer " + Constants.TOKEN_INVALID)
+                .headers("Authorization", "Bearer " + TOKEN_INVALID)
                 .pathParam("path", path);
     }
 
     @Step("Delete product inoutbounds token user")
     public void deleteProductInoutboundsUser(String path) {
         SerenityRest.given()
-                .headers("Authorization", "Bearer " + Constants.TOKEN_USER)
+                .headers("Authorization", "Bearer " + TOKEN_USER)
                 .pathParam("path", path);
     }
 
     @Step("Delete product inoutbounds Admin")
     public void deleteProductInoutboundsAdmin(String path) {
         SerenityRest.given()
-                .headers("Authorization", "Bearer " + Constants.TOKEN_ADMIN)
+                .headers("Authorization", "Bearer " + TOKEN_ADMIN)
                 .pathParam("path", path);
     }
 }

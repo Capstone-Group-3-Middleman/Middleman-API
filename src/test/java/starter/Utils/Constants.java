@@ -34,6 +34,8 @@ public class Constants {
     public static String REQ_BODY_CREATE_USER_PRODUCTS = JSON + "/ReqBody/UserProducts/CreateUserProduct/";
     public static String REQ_BODY_UPDATE_USER_PRODUCTS = JSON + "/ReqBody/UserProducts/UpdateUserProduct/";
 
+
+
     /**
      * Authentications
      */
@@ -58,8 +60,7 @@ public class Constants {
      * Carts
      */
 
-    public static String JSON_SCHEMA_LIST_CART = JSON + "/JSONSchema/Carts/ListCart/";
-    public static String JSON_SCHEMA_DELETE_CART = JSON + "/JSONSchema/Carts/DeleteCart/";
+
     public static String JSON_SCHEMA_POST_CART = JSON + "/JSONSchema/Carts/PostCart/";
 
     public static String REQ_BODY_CARTS = JSON + "/ReqBody/Carts/";
@@ -72,6 +73,12 @@ public class Constants {
 
 
 
+    /**
+     * Carts
+     */
+
+    public static String JSON_SCHEMA_LIST_CART = JSON + "/JSONSchema/Carts/ListCart/";
+    public static String JSON_SCHEMA_DELETE_CART = JSON + "/JSONSchema/Carts/DeleteCart/";
 
     public static String JSON_SCHEMA_LIST_ADMIN_PRODUCTS = JSON + "/JSONSchema/AdminProducts/ListProducts/";
     public static String JSON_SCHEMA_CREATE_ADMIN_PRODUCTS = JSON + "/JSONSchema/AdminProducts/CreateProducts/";
@@ -80,4 +87,6 @@ public class Constants {
     public static String JSON_SCHEMA_DELETE_ADMIN_PRODUCTS = JSON + "/JSONSchema/AdminProducts/DeleteProducts/";
     public static String REQ_BODY_CREATE_ADMIN_PRODUCTS = JSON + "/ReqBody/AdminProducts/CreateProducts/";
     public static String REQ_BODY_UPDATE_ADMIN_PRODUCTS = JSON + "/ReqBody/AdminProducts/UpdateProducts/";
+
+
 }
