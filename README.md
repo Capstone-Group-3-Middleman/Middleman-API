@@ -41,7 +41,7 @@
 ## 🛠 Tools
 **Manual:**
 
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)(https://app.getpostman.com/join-team?invite_code=05205af8f9c97e50deff74fbeef8b6a3&target_code=1f90dc25eb021aa229e98800eb9f0317)
+![[Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://app.getpostman.com/join-team?invite_code=05205af8f9c97e50deff74fbeef8b6a3&target_code=1f90dc25eb021aa229e98800eb9f0317)
 
 **Automation:**  
 ![IntellijIDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
