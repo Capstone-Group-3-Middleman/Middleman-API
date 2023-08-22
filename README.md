@@ -53,9 +53,9 @@
 
 **Test Case Management:**  
 
-![Google Sheets_WEB](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)](https://docs.google.com/spreadsheets/d/1dGjWgVcneqUNwWsEw3HjVHVcIW88NhkzHDRyAfyfNSU/edit#gid=0))
-![Google Sheets_API](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)([link google sheet](https://docs.google.com/spreadsheets/d/15vAlKOratoFm_b7SgAjNHDpqaYuoZuMlsEd0fIakkxI/edit#gid=0))
-[![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)]([Trello midleman](https://trello.com/b/3HsIGlcx/middleman-testing))
+![Google Sheets_WEB](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)]
+[![Google Sheets_API](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)]
+[![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)]
 
 **Communication:**  
 
