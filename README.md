@@ -13,7 +13,7 @@
 
 <p align="justify">"Middleman" functions as inventory, which is the stock of materials or goods that are stored for a specific purpose. Within this platform, users have the opportunity for the processes of searching, storing, and selling inventory—both raw materials and finished products—in a systematic manner.</p>
 
-## 📑 API Testing- Musiclab
+## 📑 API Testing- Middleman
 
 <p align="justify">This project was created to complete a Capstone project in the Batch 11 Quality Assurance class at the Alterra Academy Immersive Program. At this project, we perform an API Automation Testing for 10 resources or end points (Auth, Class, Schedule, Transaction, Mentor, Review, Chat, Student, Instrument, Genre).</p>
 
@@ -41,7 +41,7 @@
 ## 🛠 Tools
 **Manual:**
 
-![[Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://app.getpostman.com/join-team?invite_code=05205af8f9c97e50deff74fbeef8b6a3&target_code=1f90dc25eb021aa229e98800eb9f0317)
+![[Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)]
 
 **Automation:**  
 ![IntellijIDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
