@@ -53,7 +53,7 @@
 
 **Test Case Management:**  
 
-![Google Sheets_WEB](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)([link google sheet](https://docs.google.com/spreadsheets/d/1dGjWgVcneqUNwWsEw3HjVHVcIW88NhkzHDRyAfyfNSU/edit#gid=0))
+![Google Sheets_WEB](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)](https://docs.google.com/spreadsheets/d/1dGjWgVcneqUNwWsEw3HjVHVcIW88NhkzHDRyAfyfNSU/edit#gid=0))
 ![Google Sheets_API](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)([link google sheet](https://docs.google.com/spreadsheets/d/15vAlKOratoFm_b7SgAjNHDpqaYuoZuMlsEd0fIakkxI/edit#gid=0))
 [![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)]([Trello midleman](https://trello.com/b/3HsIGlcx/middleman-testing))
 
@@ -77,11 +77,11 @@
 
 ## 📱 Our teams
 
-  [![LinkedIn](https://img.shields.io/badge/-MHumam%20Zaki-white?style=for-the-badge&logo=linkedin&logoColor=blue)]([Linkedin zaki](https://www.linkedin.com/in/muhammad-humam-zaky-139369170/))
-  [![GitHub](https://img.shields.io/badge/-MhumamZaki-white?style=for-the-badge&logo=github&logoColor=black)]([github zaki](https://github.com/muhamaz))
+  [![LinkedIn](https://img.shields.io/badge/-MHumam%20Zaki-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/muhammad-humam-zaky-139369170/)
+  [![GitHub](https://img.shields.io/badge/-MhumamZaki-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/muhamaz))
 
-  [![LinkedIn](https://img.shields.io/badge/-Aditya%20Dwi%20Irawan-white?style=for-the-badge&logo=linkedin&logoColor=blue)(https://www.linkedin.com/in/aditya-dwi-irawan/)]([Linkedin aditya])
-  [![GitHub](https://img.shields.io/badge/-AdityaDwiIrawan-white?style=for-the-badge&logo=github&logoColor=black)]([Github aditya](https://github.com/Adityadi195))
+  [![LinkedIn](https://img.shields.io/badge/-Aditya%20Dwi%20Irawan-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/aditya-dwi-irawan/)
+  [![GitHub](https://img.shields.io/badge/-AdityaDwiIrawan-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/Adityadi195)
 
 
 
