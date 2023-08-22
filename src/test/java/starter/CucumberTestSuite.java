@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        tags = "@Cart",
+        tags = "@InventoriesPost or @InventoriesGet",
         plugin = {"pretty"},
         features = "classpath:features"
 )

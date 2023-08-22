@@ -39,7 +39,7 @@ public class InventoriesAPI {
     @Step("User valid token")
     public void setUserInventoryValidToken(File json) {
         SerenityRest.given()
-                .header("Authorization", "Bearer " + TOKEN_USER)
+                .header("Authorization", "Bearer " + Constants.TOKEN_USER)
                 .contentType(ContentType.JSON)
                 .body(json);
     }

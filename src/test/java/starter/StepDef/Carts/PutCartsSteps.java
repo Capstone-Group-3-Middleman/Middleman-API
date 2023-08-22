@@ -30,7 +30,7 @@ public class PutCartsSteps {
     @When("Send put cart")
     public void sendPutCart() {
         SerenityRest.when()
-                .put(CartsAPI.POST_CARTS);
+                .put(CartsAPI.POST_CARTS_PATH);
     }
 
     @When("Send put carts")
@@ -41,9 +41,9 @@ public class PutCartsSteps {
 
     @Given("Put Cart with {string} token and path {string}")
     public void putCartWithTokenAndPath(String id, String jsonName) {
-            File json = new File(Constants.REQ_BODY_INOUTBOUNDS + "" + jsonName + "");
-            cartsAPI.putInvalidPath(json, id);
-        }
+        File json = new File(Constants.REQ_BODY_INOUTBOUNDS + "" + jsonName + "");
+        cartsAPI.putInvalidPath(json, id);
+    }
 
     @When("Send put cart string")
     public void sendPutCartString() {
@@ -55,6 +55,18 @@ public class PutCartsSteps {
     public void updateInvalidProductIdCartsAndSendWithJSONFile(String id, String jsonName) {
         File json = new File(Constants.REQ_BODY_CARTS + "" + jsonName + "");
         cartsAPI.putInvalidPath(json, id);
+    }
+
+    @When("Update invalid products id {string} carts and send with JSON file {string}")
+    public void updateInvalidProductsIdCartsAndSendWithJSONFile(String id, String jsonName) {
+        File json = new File(Constants.REQ_BODY_CARTS + "" + jsonName + "");
+        cartsAPI.putsInvalidPath(json, id);
+    }
+
+    @When("Update invalids products id {string} carts and send with JSON file {string}")
+    public void updateInvalidsProductsIdCartsAndSendWithJSONFile(String id, String jsonName) {
+        File json = new File(Constants.REQ_BODY_CARTS + "" + jsonName + "");
+        cartsAPI.putsInvalidPaths(json, id);
     }
 }
 

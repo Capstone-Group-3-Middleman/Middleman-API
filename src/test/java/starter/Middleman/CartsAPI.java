@@ -98,4 +98,21 @@ public class CartsAPI {
                 .contentType(ContentType.JSON)
                 .body(json);
     }
+
+    public void putsInvalidPath(File json, String id){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.TOKEN_INVALID)
+                .pathParam("id", id)
+                .contentType(ContentType.JSON)
+                .body(json);
+    }
+
+    public void putsInvalidPaths(File json, String id){
+        SerenityRest.given()
+                .header("Authorization", "Bearer ")
+                .pathParam("id", id)
+                .contentType(ContentType.JSON)
+                .body(json);
+    }
+
 }

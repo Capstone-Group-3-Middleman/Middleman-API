@@ -1,12 +1,12 @@
 Feature: List Carts
 
-  @Cart @Positive @TokenUser
+  @CartGet @Positive @TokenUser
   Scenario: Get list cart with valid token and valid path
     Given GET List Cart with "valid" token and "valid" path
     When Send GET List Cart
     Then Status code should be 200 OK
 
-  @Cart @Negative @TokenUser
+  @CartGet @Negative @TokenUser
   Scenario: Get list cart with valid token and invalid path
     Given GET List Cart with "valid" token and "invalid" path
     When Send GET List Cart
@@ -14,7 +14,7 @@ Feature: List Carts
     And Response body should display list cart error message "Not Found"
     And Validate list cart with JSON Schema "InvalidPathListCartSchema.json"
 
-  @Cart @Negative
+  @CartGet @Negative
   Scenario: Get list cart with invalid token and valid path
     Given GET List Cart with "invalid" token and "valid" path
     When Send GET List Cart
@@ -22,7 +22,7 @@ Feature: List Carts
     And Response body should display list cart error message "invalid or expired jwt"
     And Validate list cart with JSON Schema "InvalidTokenListCartSchema.json"
 
-  @Cart @Negative
+  @CartGet @Negative
   Scenario: Get list cart with invalid token and invalid path
     Given GET List Cart with "invalid" token and "invalid" path
     When Send GET List Cart
