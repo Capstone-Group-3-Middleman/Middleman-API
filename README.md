@@ -66,7 +66,7 @@
 
 1. Clone the repository
 ```bash
-  $ git clone https://github.com/ProjectBengcall/API-Testing.git](https://github.com/Capstone-Group-3-Middleman/Middleman-API.git
+  $ git clone https://github.com/Capstone-Group-3-Middleman/Middleman-API.git
 ```
 2. Open  this Project Repository on Intellij IDE and Run this on the IDE terminal
 
