@@ -1,12 +1,17 @@
- <p align="center">
+<div>
+<p align="center">
+    <a href="https://middleman-alta.vercel.app/auth/welcome">
+       <img src="https://middleman-alta.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.f4fa4ef1.png&w=640&q=75" alt="Logo" height="60">
+    </a>
+  <br/>
     API Automation Testing Project
-    <br />
+  <br />
     Capstone Program Immersive Alterra Academy
-    <br />
-    <a href="https://app.swaggerhub.com/apis-docs/vaniliacahya/capstone/1.0.0"><strong>| Open API Documentation |</strong></a>
-    <br />
-    <br />
-  </p>
+  <br />
+    <a href="https://app.swaggerhub.com/apis-docs/vaniliacahya/capstone/1.0.0"><strong>| Middleman API Documentation |</strong></a>
+  <br />
+  <br />
+</p>
 </div>
 
 ## 📑 About the Project
