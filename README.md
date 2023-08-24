@@ -24,19 +24,19 @@
 
 
 #### Summary Report
-![report-api-summary]()
+![report-api-summary](https://github.com/Capstone-Group-3-Middleman/Middleman-API/blob/master/images/2%20API.png)
 
 #### Coverage Report
-![report-api-cpverage]
+![report-api-cpverage](https://github.com/Capstone-Group-3-Middleman/Middleman-API/blob/master/images/4%20API.PNG)
 
 #### Test Documentation Spreadsheet
-![report-api-chats]
+![report-api-chats](https://github.com/Capstone-Group-3-Middleman/Middleman-API/blob/master/images/5%20API.PNG)
 
 #### Automation Testing When Run in Intellij IDE
-![report-api-runningtest]
+![report-api-runningtest](https://github.com/Capstone-Group-3-Middleman/Middleman-API/blob/master/images/3%20API.PNG)
 
 #### Manual Testing When Run in Postman
-![report-api-runningtest]
+![report-api-runningtest](https://github.com/Capstone-Group-3-Middleman/Middleman-API/blob/master/images/1%20API.png)
 
 ## 🛠 Tools
 **Manual:**
@@ -76,8 +76,8 @@
 
 ## 📱 Our teams
 
-  [![LinkedIn](https://img.shields.io/badge/-MHumam%20Zaki-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/muhammad-humam-zaky-139369170/)
-  [![GitHub](https://img.shields.io/badge/-MhumamZaki-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/muhamaz)
+  [![LinkedIn](https://img.shields.io/badge/-MHumam%20Zaky-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/muhammad-humam-zaky-139369170/)
+  [![GitHub](https://img.shields.io/badge/-MhumamZaky-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/muhamaz)
 
   [![LinkedIn](https://img.shields.io/badge/-Aditya%20Dwi%20Irawan-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/aditya-dwi-irawan/)
   [![GitHub](https://img.shields.io/badge/-AdityaDwiIrawan-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/Adityadi195)
