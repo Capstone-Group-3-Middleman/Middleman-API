@@ -3,7 +3,7 @@
     <br />
     Capstone Program Immersive Alterra Academy
     <br />
-    <a href="[[https://app.swaggerhub.com/apis-docs/KHARISMAJANUAR/MusicLab-API/1.0.0](https://app.swaggerhub.com/apis-docs/vaniliacahya/capstone/1.0.0)#/](https://app.swaggerhub.com/apis-docs/vaniliacahya/capstone/1.0.0)"><strong>| Open API Documentation |</strong></a>
+    <a href="https://app.swaggerhub.com/apis-docs/vaniliacahya/capstone/1.0.0"><strong>| Open API Documentation |</strong></a>
     <br />
     <br />
   </p>
@@ -15,7 +15,7 @@
 
 ## 📑 API Testing- Middleman
 
-<p align="justify">This project was created to complete a Capstone project in the Batch 11 Quality Assurance class at the Alterra Academy Immersive Program. At this project, we perform an API Automation Testing for 10 resources or end points (Auth, Class, Schedule, Transaction, Mentor, Review, Chat, Student, Instrument, Genre).</p>
+<p align="justify">This project was created to complete a Capstone project in the Batch 11 Quality Assurance class at the Alterra Academy Immersive Program. At this project, we perform an API Automation Testing for 8 resources or end points (Authentication, Users, Admin_Product, Carts, Inoutbounds, Inventories, Orders).</p>
 
 ## 📓 Testing Documentation
 [Test Case API](https://docs.google.com/spreadsheets/d/15vAlKOratoFm_b7SgAjNHDpqaYuoZuMlsEd0fIakkxI/edit#gid=0)
@@ -24,7 +24,7 @@
 
 
 #### Summary Report
-![report-api-summary]
+![report-api-summary]()
 
 #### Coverage Report
 ![report-api-cpverage]
